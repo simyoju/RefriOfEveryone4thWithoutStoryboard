@@ -18,8 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = RFTabBarController()
         window?.makeKeyAndVisible()
+        
+        configureNavigationBar()
+    }
+    
+    func configureNavigationBar(){
+        UINavigationBar.appearance().tintColor = UIColor(named: "MainColor")
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
