@@ -19,7 +19,7 @@ class RFTabBarController: UITabBarController {
     
     private func createHomeNC() -> UINavigationController {
         let homeVC = HomeVC()
-        homeVC.tabBarItem = UITabBarItem(title: "home", image: UIImage(systemName: "house"), tag: 0)
+        homeVC.tabBarItem = UITabBarItem(title: "home", image: UIImage(named: "Home_icon"), tag: 0)
         return UINavigationController(rootViewController: homeVC)
     }
     
