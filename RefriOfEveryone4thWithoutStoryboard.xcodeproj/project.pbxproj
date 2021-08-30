@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0DAC1826D8AE32006AD141 /* CategoriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DAC1726D8AE32006AD141 /* CategoriesData.swift */; };
+		DF0DAC1D26D8B488006AD141 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DAC1C26D8B488006AD141 /* CategoryCell.swift */; };
+		DF0DAC3F26D8BB1F006AD141 /* CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DAC3E26D8BB1F006AD141 /* CategoryCollectionView.swift */; };
+		DF0DAC4126D8BD78006AD141 /* CellWithCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DAC4026D8BD78006AD141 /* CellWithCollectionView.swift */; };
 		DF4887CC26D159F4005B9519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887CB26D159F4005B9519 /* AppDelegate.swift */; };
 		DF4887CE26D159F4005B9519 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887CD26D159F4005B9519 /* SceneDelegate.swift */; };
 		DF4887D026D159F4005B9519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887CF26D159F4005B9519 /* ViewController.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF0DAC1726D8AE32006AD141 /* CategoriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesData.swift; sourceTree = "<group>"; };
+		DF0DAC1C26D8B488006AD141 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		DF0DAC3E26D8BB1F006AD141 /* CategoryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionView.swift; sourceTree = "<group>"; };
+		DF0DAC4026D8BD78006AD141 /* CellWithCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithCollectionView.swift; sourceTree = "<group>"; };
 		DF4887C826D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefriOfEveryone4thWithoutStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4887CB26D159F4005B9519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF4887CD26D159F4005B9519 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF0DAC1926D8B107006AD141 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF0DAC1C26D8B488006AD141 /* CategoryCell.swift */,
+				DF0DAC4026D8BD78006AD141 /* CellWithCollectionView.swift */,
+				DF0DAC3E26D8BB1F006AD141 /* CategoryCollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DF4887BF26D159F4005B9519 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +86,7 @@
 		DF4887CA26D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				DF0DAC1926D8B107006AD141 /* View */,
 				DF4887E226D15CCC005B9519 /* Screens */,
 				DF4887CB26D159F4005B9519 /* AppDelegate.swift */,
 				DF4887CD26D159F4005B9519 /* SceneDelegate.swift */,
@@ -77,6 +96,7 @@
 				DF4887DC26D159F9005B9519 /* Info.plist */,
 				DF4887D426D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld */,
 				DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */,
+				DF0DAC1726D8AE32006AD141 /* CategoriesData.swift */,
 			);
 			path = RefriOfEveryone4thWithoutStoryboard;
 			sourceTree = "<group>";
@@ -162,11 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF0DAC1D26D8B488006AD141 /* CategoryCell.swift in Sources */,
 				DF4887E626D15D17005B9519 /* CommunityVC.swift in Sources */,
 				DF4887D026D159F4005B9519 /* ViewController.swift in Sources */,
 				DF4887E426D15CF6005B9519 /* HomeVC.swift in Sources */,
+				DF0DAC3F26D8BB1F006AD141 /* CategoryCollectionView.swift in Sources */,
 				DF4887EE26D15DA6005B9519 /* RFTabBarController.swift in Sources */,
+				DF0DAC4126D8BD78006AD141 /* CellWithCollectionView.swift in Sources */,
 				DF4887CC26D159F4005B9519 /* AppDelegate.swift in Sources */,
+				DF0DAC1826D8AE32006AD141 /* CategoriesData.swift in Sources */,
 				DF4887EC26D15D6E005B9519 /* MyPageVC.swift in Sources */,
 				DF4887EA26D15D60005B9519 /* NoticeVC.swift in Sources */,
 				DF4887CE26D159F4005B9519 /* SceneDelegate.swift in Sources */,
