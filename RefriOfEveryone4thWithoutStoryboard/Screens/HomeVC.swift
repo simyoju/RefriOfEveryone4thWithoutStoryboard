@@ -13,7 +13,6 @@ class HomeVC: UIViewController {
     let sectionTitles = [" ","hi"," "]
     
     let tableView = UITableView()
-    let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +25,7 @@ class HomeVC: UIViewController {
         let tableViewCategoryNib = UINib(nibName: "CategoriesTableViewCell", bundle: nil)
         tableView.register(tableViewCategoryNib, forCellReuseIdentifier: "CategoriesTableViewCell")
         
-        tableView.delegate = self
+//        tableView.delegate = self
         tableView.dataSource = self
         
     }
@@ -48,18 +47,18 @@ extension HomeVC : UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sectionTitles[section]
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return sectionTitles[section]
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CategoriesTableViewCell.identifier) as? CategoriesTableViewCell else { return UITableViewCell() }
-        cell.setCell()
-        
+//        cell.setCell()
+        cell.backgroundColor = .blue
         return cell
     }
 }
