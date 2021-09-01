@@ -23,6 +23,8 @@ class HomeVC: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: "CategoryTableViewCell")
     }
     
     func layout(){
@@ -43,8 +45,8 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.backgroundColor = .yellow
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryTableViewCell", for: indexPath) as! CategoryTableViewCell
+        cell.inventoryName.text = "test"
         return cell
     }
 }

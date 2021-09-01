@@ -18,6 +18,7 @@
 		DF4887EA26D15D60005B9519 /* NoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887E926D15D60005B9519 /* NoticeVC.swift */; };
 		DF4887EC26D15D6E005B9519 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887EB26D15D6E005B9519 /* MyPageVC.swift */; };
 		DF4887EE26D15DA6005B9519 /* RFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */; };
+		DFD5D36426DF52870068964B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DF4887E926D15D60005B9519 /* NoticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeVC.swift; sourceTree = "<group>"; };
 		DF4887EB26D15D6E005B9519 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 		DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFTabBarController.swift; sourceTree = "<group>"; };
+		DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				DF4887DC26D159F9005B9519 /* Info.plist */,
 				DF4887D426D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld */,
 				DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */,
+				DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */,
 			);
 			path = RefriOfEveryone4thWithoutStoryboard;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				DF4887EE26D15DA6005B9519 /* RFTabBarController.swift in Sources */,
 				DF4887CC26D159F4005B9519 /* AppDelegate.swift in Sources */,
 				DF4887EC26D15D6E005B9519 /* MyPageVC.swift in Sources */,
+				DFD5D36426DF52870068964B /* CategoryTableViewCell.swift in Sources */,
 				DF4887EA26D15D60005B9519 /* NoticeVC.swift in Sources */,
 				DF4887CE26D159F4005B9519 /* SceneDelegate.swift in Sources */,
 				DF4887D626D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld in Sources */,
