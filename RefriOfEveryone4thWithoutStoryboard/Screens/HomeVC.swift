@@ -10,20 +10,24 @@ import UIKit
 class HomeVC: UIViewController {
     
     let categories = CategoriesData()
-    let sectionTitles = [" "," "," "]
+    let sectionTitles = [" ","hi"," "]
     
     let tableView = UITableView()
     let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableViewLayout()
+        
+        
+        
         self.title = "home"
         
-        tableViewLayout()
-        collectionView.setCollectionViewLayout(UICollectionViewLayout.init(), animated: true)
-        tableView.addSubview(collectionView)
+        let tableViewCategoryNib = UINib(nibName: "CategoriesTableViewCell", bundle: nil)
+        tableView.register(tableViewCategoryNib, forCellReuseIdentifier: "CategoriesTableViewCell")
         
-//        collectionView.register(CategoryCell.self, forCellWithReuseIdentifier: "categoryCell")
+        tableView.delegate = self
+        tableView.dataSource = self
         
     }
     
@@ -41,7 +45,7 @@ class HomeVC: UIViewController {
 
 extension HomeVC : UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 1
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -53,8 +57,8 @@ extension HomeVC : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellWithCollectionView") as! CellWithCollectionView
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CategoriesTableViewCell.identifier) as? CategoriesTableViewCell else { return UITableViewCell() }
+        cell.setCell()
         
         return cell
     }
