@@ -62,8 +62,8 @@
 			children = (
 				DFD5D31B26DCA6250068964B /* CategoriesTableViewCell.swift */,
 				DFD5D31C26DCA6250068964B /* CategoriesTableViewCell.xib */,
-				DFD5D32026DCB0210068964B /* CategoriesCollectionViewCell.xib */,
 				DFD5D31F26DCB0210068964B /* CategoriesCollectionViewCell.swift */,
+				DFD5D32026DCB0210068964B /* CategoriesCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";

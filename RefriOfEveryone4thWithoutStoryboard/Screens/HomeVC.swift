@@ -7,12 +7,21 @@
 
 import UIKit
 
+enum CellType {
+    case category
+    case list
+    case list2
+}
+
 class HomeVC: UIViewController {
     
     let categories = CategoriesData()
     let sectionTitles = [" ","hi"," "]
     
+    let layout:[CellType] = [.category, .list]
+    
     let tableView = UITableView()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +33,10 @@ class HomeVC: UIViewController {
         
         let tableViewCategoryNib = UINib(nibName: "CategoriesTableViewCell", bundle: nil)
         tableView.register(tableViewCategoryNib, forCellReuseIdentifier: "CategoriesTableViewCell")
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = UITableView.automaticDimension
         
-//        tableView.delegate = self
+        tableView.delegate = self
         tableView.dataSource = self
         
     }
@@ -47,18 +58,28 @@ extension HomeVC : UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return sectionTitles[section]
-//    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionTitles[section]
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CategoriesTableViewCell.identifier) as? CategoriesTableViewCell else { return UITableViewCell() }
+        let cell = tableView.dequeueReusableCell(withIdentifier: CategoriesTableViewCell.identifier) as! CategoriesTableViewCell 
 //        cell.setCell()
         cell.backgroundColor = .blue
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     
+        
+        switch indexPath.row {
+        case 0 : return CGFloat(360)
+        default: return CGFloat(100)
+        }
+        
     }
 }
