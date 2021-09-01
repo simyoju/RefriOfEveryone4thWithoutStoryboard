@@ -49,4 +49,8 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         cell.inventoryName.text = "test"
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(360)
+    }
 }

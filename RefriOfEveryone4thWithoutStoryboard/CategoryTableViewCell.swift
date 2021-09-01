@@ -14,9 +14,8 @@ class CategoryTableViewCell: UITableViewCell {
     let collectionView:UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 10
-                
+
         layout.scrollDirection = .vertical
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         return cv
@@ -43,6 +42,7 @@ class CategoryTableViewCell: UITableViewCell {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         
         inventoryName.backgroundColor = .blue
+        collectionView.backgroundColor = .yellow
         
         NSLayoutConstraint.activate([
             inventoryName.topAnchor.constraint(equalTo: self.topAnchor, constant: 32),
