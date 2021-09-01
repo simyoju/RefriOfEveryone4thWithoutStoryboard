@@ -13,7 +13,8 @@ class CategoryTableViewCell: UITableViewCell {
     let inventoryName = UILabel()
     let collectionView:UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 10
+//        layout.minimumLineSpacing = 10
+        
         layout.scrollDirection = .vertical
         
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -56,13 +57,13 @@ class CategoryTableViewCell: UITableViewCell {
             inventoryName.topAnchor.constraint(equalTo: self.topAnchor, constant: 32),
             inventoryName.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             
-            collectionView.topAnchor.constraint(equalTo: self.inventoryName.topAnchor, constant: 16),
-            collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 32),
-            collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 16)
-            
-            
+            collectionView.topAnchor.constraint(equalTo: self.inventoryName.bottomAnchor, constant: 16),
+            collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor)
         ])
+        
+    
     }
 
 }
