@@ -18,6 +18,8 @@
 		DF4887EA26D15D60005B9519 /* NoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887E926D15D60005B9519 /* NoticeVC.swift */; };
 		DF4887EC26D15D6E005B9519 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887EB26D15D6E005B9519 /* MyPageVC.swift */; };
 		DF4887EE26D15DA6005B9519 /* RFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */; };
+		DFA82B6526DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA82B6426DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift */; };
+		DFA82B6726DFCACD005E2104 /* ItemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA82B6626DFCACD005E2104 /* ItemListTableViewCell.swift */; };
 		DFD5D36426DF52870068964B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */; };
 		DFD5D36626DF5DC90068964B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5D36526DF5DC90068964B /* CategoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,8 @@
 		DF4887E926D15D60005B9519 /* NoticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeVC.swift; sourceTree = "<group>"; };
 		DF4887EB26D15D6E005B9519 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 		DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFTabBarController.swift; sourceTree = "<group>"; };
+		DFA82B6426DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveToEatFastTableViewCell.swift; sourceTree = "<group>"; };
+		DFA82B6626DFCACD005E2104 /* ItemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewCell.swift; sourceTree = "<group>"; };
 		DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		DFD5D36526DF5DC90068964B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +84,8 @@
 				DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */,
 				DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */,
 				DFD5D36526DF5DC90068964B /* CategoryCollectionViewCell.swift */,
+				DFA82B6426DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift */,
+				DFA82B6626DFCACD005E2104 /* ItemListTableViewCell.swift */,
 			);
 			path = RefriOfEveryone4thWithoutStoryboard;
 			sourceTree = "<group>";
@@ -167,6 +173,7 @@
 			files = (
 				DF4887E626D15D17005B9519 /* CommunityVC.swift in Sources */,
 				DF4887E426D15CF6005B9519 /* HomeVC.swift in Sources */,
+				DFA82B6526DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift in Sources */,
 				DF4887EE26D15DA6005B9519 /* RFTabBarController.swift in Sources */,
 				DF4887CC26D159F4005B9519 /* AppDelegate.swift in Sources */,
 				DF4887EC26D15D6E005B9519 /* MyPageVC.swift in Sources */,
@@ -174,6 +181,7 @@
 				DF4887EA26D15D60005B9519 /* NoticeVC.swift in Sources */,
 				DF4887CE26D159F4005B9519 /* SceneDelegate.swift in Sources */,
 				DFD5D36626DF5DC90068964B /* CategoryCollectionViewCell.swift in Sources */,
+				DFA82B6726DFCACD005E2104 /* ItemListTableViewCell.swift in Sources */,
 				DF4887D626D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld in Sources */,
 				DF4887E826D15D2A005B9519 /* AddItemVC.swift in Sources */,
 			);

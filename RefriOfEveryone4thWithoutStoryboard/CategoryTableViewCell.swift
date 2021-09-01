@@ -58,7 +58,7 @@ class CategoryTableViewCell: UITableViewCell {
             inventoryName.topAnchor.constraint(equalTo: self.topAnchor, constant: 32),
             inventoryName.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             
-            collectionView.topAnchor.constraint(equalTo: self.inventoryName.bottomAnchor, constant: 16),
+            collectionView.topAnchor.constraint(equalTo: self.inventoryName.bottomAnchor),
             collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor)

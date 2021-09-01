@@ -25,6 +25,7 @@ class HomeVC: UIViewController {
         tableView.dataSource = self
         
         tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: CategoryTableViewCell.identifier)
+        tableView.register(HaveToEatFastTableViewCell.self, forCellReuseIdentifier: HaveToEatFastTableViewCell.identifier)
     }
     
     func layout(){
@@ -41,13 +42,23 @@ class HomeVC: UIViewController {
 
 extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.identifier, for: indexPath) as! CategoryTableViewCell
-        cell.inventoryName.text = "냉장고 이름1"
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.identifier) as! CategoryTableViewCell
+        let haveToEatCell = tableView.dequeueReusableCell(withIdentifier: HaveToEatFastTableViewCell.identifier) as! HaveToEatFastTableViewCell
+        
+        switch indexPath.row {
+        case 0:
+            cell.inventoryName.text = "냉장고 이름1"
+            return cell
+        case 1:
+            haveToEatCell.title.text = "빨리 먹어야해요!"
+            return haveToEatCell
+        default:
+            return UITableViewCell()
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
