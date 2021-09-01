@@ -30,7 +30,10 @@ class HaveToEatFastTableViewCell: UITableViewCell {
         addSubview(title)
         addSubview(tableView)
         
-        tableView.register(HaveToEatFastTableViewCell.self, forCellReuseIdentifier: HaveToEatFastTableViewCell.identifier)
+        tableView.register(ItemListTableViewCell.self, forCellReuseIdentifier: ItemListTableViewCell.identifier)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         
         layout()
     }
@@ -39,7 +42,7 @@ class HaveToEatFastTableViewCell: UITableViewCell {
         title.translatesAutoresizingMaskIntoConstraints = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
-        title.backgroundColor = .blue
+//        title.backgroundColor = .blue
         tableView.backgroundColor = .red
         
         NSLayoutConstraint.activate([
@@ -62,7 +65,17 @@ extension HaveToEatFastTableViewCell : UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ItemListTableViewCell.identifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: ItemListTableViewCell.identifier) as! ItemListTableViewCell
+        cell.itemImage.image = UIImage(named: "image_default")
+        cell.categroy.text = "category"
+        cell.itemTitle.text = "item title"
+        cell.period.text = "보관기간 ~ 20xx.xx.xx"
+        cell.dDay.text = "오늘까지"
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(105)
+    }
+
 }
