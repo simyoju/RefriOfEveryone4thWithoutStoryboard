@@ -14,7 +14,6 @@ class CategoryTableViewCell: UITableViewCell {
     let collectionView:UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 10
-
         layout.scrollDirection = .vertical
         
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -35,6 +34,15 @@ class CategoryTableViewCell: UITableViewCell {
     private func setting(){
         addSubview(inventoryName)
         addSubview(collectionView)
+        
+        collectionViewSetting()
+    }
+    
+    func collectionViewSetting(){
+        self.collectionView.register(CategoryCollectionViewCell.self, forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
     private func layout(){
@@ -57,4 +65,18 @@ class CategoryTableViewCell: UITableViewCell {
         ])
     }
 
+}
+
+extension CategoryTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 12
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
+        cell.backgroundColor = .red
+        
+        return cell
+    }
 }
