@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DF4887CC26D159F4005B9519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887CB26D159F4005B9519 /* AppDelegate.swift */; };
 		DF4887CE26D159F4005B9519 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887CD26D159F4005B9519 /* SceneDelegate.swift */; };
-		DF4887D026D159F4005B9519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887CF26D159F4005B9519 /* ViewController.swift */; };
 		DF4887D626D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF4887D426D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld */; };
 		DF4887D826D159F9005B9519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4887D726D159F9005B9519 /* Assets.xcassets */; };
 		DF4887DB26D159F9005B9519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF4887D926D159F9005B9519 /* LaunchScreen.storyboard */; };
@@ -19,13 +18,16 @@
 		DF4887EA26D15D60005B9519 /* NoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887E926D15D60005B9519 /* NoticeVC.swift */; };
 		DF4887EC26D15D6E005B9519 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887EB26D15D6E005B9519 /* MyPageVC.swift */; };
 		DF4887EE26D15DA6005B9519 /* RFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */; };
+		DFA82B6526DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA82B6426DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift */; };
+		DFA82B6726DFCACD005E2104 /* ItemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA82B6626DFCACD005E2104 /* ItemListTableViewCell.swift */; };
+		DFD5D36426DF52870068964B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */; };
+		DFD5D36626DF5DC90068964B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5D36526DF5DC90068964B /* CategoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF4887C826D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefriOfEveryone4thWithoutStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4887CB26D159F4005B9519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF4887CD26D159F4005B9519 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF4887CF26D159F4005B9519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF4887D526D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RefriOfEveryone4thWithoutStoryboard.xcdatamodel; sourceTree = "<group>"; };
 		DF4887D726D159F9005B9519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF4887DA26D159F9005B9519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		DF4887E926D15D60005B9519 /* NoticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeVC.swift; sourceTree = "<group>"; };
 		DF4887EB26D15D6E005B9519 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 		DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFTabBarController.swift; sourceTree = "<group>"; };
+		DFA82B6426DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveToEatFastTableViewCell.swift; sourceTree = "<group>"; };
+		DFA82B6626DFCACD005E2104 /* ItemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewCell.swift; sourceTree = "<group>"; };
+		DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		DFD5D36526DF5DC90068964B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +77,15 @@
 				DF4887E226D15CCC005B9519 /* Screens */,
 				DF4887CB26D159F4005B9519 /* AppDelegate.swift */,
 				DF4887CD26D159F4005B9519 /* SceneDelegate.swift */,
-				DF4887CF26D159F4005B9519 /* ViewController.swift */,
 				DF4887D726D159F9005B9519 /* Assets.xcassets */,
 				DF4887D926D159F9005B9519 /* LaunchScreen.storyboard */,
 				DF4887DC26D159F9005B9519 /* Info.plist */,
 				DF4887D426D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld */,
 				DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */,
+				DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */,
+				DFD5D36526DF5DC90068964B /* CategoryCollectionViewCell.swift */,
+				DFA82B6426DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift */,
+				DFA82B6626DFCACD005E2104 /* ItemListTableViewCell.swift */,
 			);
 			path = RefriOfEveryone4thWithoutStoryboard;
 			sourceTree = "<group>";
@@ -163,13 +172,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF4887E626D15D17005B9519 /* CommunityVC.swift in Sources */,
-				DF4887D026D159F4005B9519 /* ViewController.swift in Sources */,
 				DF4887E426D15CF6005B9519 /* HomeVC.swift in Sources */,
+				DFA82B6526DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift in Sources */,
 				DF4887EE26D15DA6005B9519 /* RFTabBarController.swift in Sources */,
 				DF4887CC26D159F4005B9519 /* AppDelegate.swift in Sources */,
 				DF4887EC26D15D6E005B9519 /* MyPageVC.swift in Sources */,
+				DFD5D36426DF52870068964B /* CategoryTableViewCell.swift in Sources */,
 				DF4887EA26D15D60005B9519 /* NoticeVC.swift in Sources */,
 				DF4887CE26D159F4005B9519 /* SceneDelegate.swift in Sources */,
+				DFD5D36626DF5DC90068964B /* CategoryCollectionViewCell.swift in Sources */,
+				DFA82B6726DFCACD005E2104 /* ItemListTableViewCell.swift in Sources */,
 				DF4887D626D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld in Sources */,
 				DF4887E826D15D2A005B9519 /* AddItemVC.swift in Sources */,
 			);
