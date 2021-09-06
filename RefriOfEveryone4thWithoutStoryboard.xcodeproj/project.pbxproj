@@ -74,18 +74,11 @@
 		DF4887CA26D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				DF8A9F9126E5ECAD00E64ED6 /* Defaults */,
+				DF8A9F9026E5EC9200E64ED6 /* Controllers */,
+				DF8A9F8F26E5EC7200E64ED6 /* Views */,
 				DF4887E226D15CCC005B9519 /* Screens */,
-				DF4887CB26D159F4005B9519 /* AppDelegate.swift */,
-				DF4887CD26D159F4005B9519 /* SceneDelegate.swift */,
 				DF4887D726D159F9005B9519 /* Assets.xcassets */,
-				DF4887D926D159F9005B9519 /* LaunchScreen.storyboard */,
-				DF4887DC26D159F9005B9519 /* Info.plist */,
-				DF4887D426D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld */,
-				DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */,
-				DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */,
-				DFD5D36526DF5DC90068964B /* CategoryCollectionViewCell.swift */,
-				DFA82B6426DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift */,
-				DFA82B6626DFCACD005E2104 /* ItemListTableViewCell.swift */,
 			);
 			path = RefriOfEveryone4thWithoutStoryboard;
 			sourceTree = "<group>";
@@ -100,6 +93,37 @@
 				DF4887EB26D15D6E005B9519 /* MyPageVC.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		DF8A9F8F26E5EC7200E64ED6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFD5D36326DF52870068964B /* CategoryTableViewCell.swift */,
+				DFD5D36526DF5DC90068964B /* CategoryCollectionViewCell.swift */,
+				DFA82B6426DFCA1E005E2104 /* HaveToEatFastTableViewCell.swift */,
+				DFA82B6626DFCACD005E2104 /* ItemListTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF8A9F9026E5EC9200E64ED6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF4887ED26D15DA6005B9519 /* RFTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF8A9F9126E5ECAD00E64ED6 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				DF4887CB26D159F4005B9519 /* AppDelegate.swift */,
+				DF4887CD26D159F4005B9519 /* SceneDelegate.swift */,
+				DF4887D926D159F9005B9519 /* LaunchScreen.storyboard */,
+				DF4887DC26D159F9005B9519 /* Info.plist */,
+				DF4887D426D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld */,
+			);
+			path = Defaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
