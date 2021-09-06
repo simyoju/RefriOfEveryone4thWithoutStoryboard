@@ -74,6 +74,7 @@
 		DF4887CA26D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				DF4887DC26D159F9005B9519 /* Info.plist */,
 				DF8A9F9126E5ECAD00E64ED6 /* Defaults */,
 				DF8A9F9026E5EC9200E64ED6 /* Controllers */,
 				DF8A9F8F26E5EC7200E64ED6 /* Views */,
@@ -120,7 +121,6 @@
 				DF4887CB26D159F4005B9519 /* AppDelegate.swift */,
 				DF4887CD26D159F4005B9519 /* SceneDelegate.swift */,
 				DF4887D926D159F9005B9519 /* LaunchScreen.storyboard */,
-				DF4887DC26D159F9005B9519 /* Info.plist */,
 				DF4887D426D159F4005B9519 /* RefriOfEveryone4thWithoutStoryboard.xcdatamodeld */,
 			);
 			path = Defaults;
